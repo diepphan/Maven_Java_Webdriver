@@ -15,6 +15,7 @@ public class Selenium_01_CheckEnvironment {
 
 	@BeforeClass
 	public void beforeClass() {
+		
 		driver = new FirefoxDriver();
 		driver.get("http://live.guru99.com/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
